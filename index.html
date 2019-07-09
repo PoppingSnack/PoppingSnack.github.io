@@ -327,7 +327,7 @@
                 
               
 
-              <time title="Erstellt: 2019-07-09 13:51:45 / Geändert am: 15:44:31" itemprop="dateCreated datePublished" datetime="2019-07-09T13:51:45+08:00">2019-07-09</time>
+              <time title="Erstellt: 2019-07-09 13:51:45 / Geändert am: 15:49:19" itemprop="dateCreated datePublished" datetime="2019-07-09T13:51:45+08:00">2019-07-09</time>
             </span>
           
 
@@ -413,17 +413,16 @@
 <h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>格式：<br><img src="%E8%BF%9E%E6%8E%A5/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84" alt="图片"></p>
 </li>
 </ol>
-<p>方式一：直接引用网络图片<br> <img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网络图片"><br> <a href="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a></p>
+<p>方式一：直接引用网络图片<br>效果如下：<br> <img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网络图片"><br> <a href="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a></p>
 <p>方式二：引用本地图片</p>
 <p>相对引用:</p>
 <p>图片除了可以放在统一的 images 文件夹中，还可以放在文章自己的目录中，文章的目录可以通过配置 _config.yml 来生成.</p>
 <pre><code>post_asset_folder: true</code></pre><p>将 _config.yml 文件中的配置项 post_asset_folder 设为 true 后，执行命令 $ hexo new post_name，在 source/_posts 中会生成文章 post_name.md 和同名文件夹 post_name 。将图片资源放在 post_name 中，文章就可以使用相对路径引用图片资源了。</p>
-<pre><code>![想输入的提示名字，可不输入](test.jpg)</code></pre><p><img src="test.jpg" alt="本地图片"></p>
+<pre><code>![想输入的提示名字，可不输入](test.jpg)</code></pre><p>效果如下：<br><img src="test.jpg" alt="本地图片"></p>
 <p>绝对引用：</p>
-<pre><code>    当 Hexo 项目中只用到少量图片时，可以将图片统一放在 source/images 文件夹中，通过 Markdown 语法访问它们。
-
-![想输入的提示名字，可不输入](/images/test.jpg)</code></pre><p><img src="/images/test.jpg" alt="本地图片"><br><a href="https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg" target="_blank" rel="noopener">https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg</a></p>
-<h2 id="添加链接"><a href="#添加链接" class="headerlink" title="添加链接"></a>添加链接</h2><pre><code>[想输入的提示名字，可不输入](/images/test.jpg)</code></pre><p> <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<p>当 Hexo 项目中只用到少量图片时，可以将图片统一放在 source/images 文件夹中，通过 Markdown 语法访问它们。</p>
+<pre><code>![想输入的提示名字，可不输入](/images/test.jpg)</code></pre><p>效果如下：<br><img src="/images/test.jpg" alt="本地图片"><br><a href="https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg" target="_blank" rel="noopener">https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg</a></p>
+<h2 id="添加链接"><a href="#添加链接" class="headerlink" title="添加链接"></a>添加链接</h2><pre><code>[想输入的提示名字，可不输入](/images/test.jpg)</code></pre><p> 效果如下：<br> <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
 
           
         
