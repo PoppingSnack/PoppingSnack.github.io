@@ -102,7 +102,7 @@
 <meta property="og:description" content="新手第一篇 添加文章hexo new 文章 文件放在source/_post 目录下  添加草稿hexo new draft 草稿名 文件放在source/_drafts目录下  发布草稿hexo publish 草稿名你会发现_drafts里的b.md不见了，跑到了_posts里面,也就说明你的草稿发布成功了。 新建普通页面hexo new page 文件名这个命令会在source文件夹内创建出">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-07-09T07:23:57.519Z">
+<meta property="og:updated_time" content="2019-07-09T07:28:49.612Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="新手第一篇 添加文章hexo new 文章 文件放在source/_post 目录下  添加草稿hexo new draft 草稿名 文件放在source/_drafts目录下  发布草稿hexo publish 草稿名你会发现_drafts里的b.md不见了，跑到了_posts里面,也就说明你的草稿发布成功了。 新建普通页面hexo new page 文件名这个命令会在source文件夹内创建出">
@@ -330,7 +330,7 @@
                 
               
 
-              <time title="Erstellt: 2019-07-09 13:51:45 / Geändert am: 15:23:57" itemprop="dateCreated datePublished" datetime="2019-07-09T13:51:45+08:00">2019-07-09</time>
+              <time title="Erstellt: 2019-07-09 13:51:45 / Geändert am: 15:28:49" itemprop="dateCreated datePublished" datetime="2019-07-09T13:51:45+08:00">2019-07-09</time>
             </span>
           
 
@@ -411,31 +411,30 @@
 <li><p>粗体、斜体、删除线；粗体：在文字前后添加 ** (注意符号与文字间不要有空格）斜体：在文字前后添加 *删除线：在文字前后添加 ~~ </p>
 </li>
 <li><p>在想要展示Markdown笔记目录的地方，添加 [TOC] ，在阅读模式下，标题1~6样式的内容会被提取出来作为目录；</p>
-<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>格式：<br><code>![图片](连接/绝对路径/相对路径)</code></p>
+<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>格式：<br><code>![图片](连接/绝对路径/相对路径)</code><br>方式一：直接引用网络图片<br><img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网络图片"><br><a href="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a></p>
 </li>
 </ol>
-<ul>
-<li><p>方式一：直接引用网络图片<br><img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片"><br><a href="https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg" target="_blank" rel="noopener">https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg</a></p>
-</li>
-<li><p>方式二：引用本地图片</p>
-<p> 相对引用:</p>
-<pre><code>图片除了可以放在统一的 images 文件夹中，还可以放在文章自己的目录中，文章的目录可以通过配置 _config.yml 来生成。配置如下：
+<pre><code>方式二：引用本地图片
 
-`post_asset_folder: true`
+相对引用:
+    图片除了可以放在统一的 images 文件夹中，还可以放在文章自己的目录中，文章的目录可以通过配置 _config.yml 来生成。配置如下：
 
-将 _config.yml 文件中的配置项 post_asset_folder 设为 true 后，执行命令 $ hexo new post_name，在 source/_posts 中会生成文章 post_name.md 和同名文件夹 post_name 。将图片资源放在 post_name 中，文章就可以使用相对路径引用图片资源了。
+    `post_asset_folder: true`
 
-`![想输入的提示名字，可不输入](test.jpg)`
+    将 _config.yml 文件中的配置项 post_asset_folder 设为 true 后，执行命令 $ hexo new post_name，在 source/_posts 中会生成文章 post_name.md 和同名文件夹 post_name 。将图片资源放在 post_name 中，文章就可以使用相对路径引用图片资源了。
 
-![alt](test.jpg)</code></pre><p> 绝对引用：</p>
-<pre><code>当 Hexo 项目中只用到少量图片时，可以将图片统一放在 source/images 文件夹中，通过 Markdown 语法访问它们。
+    `![想输入的提示名字，可不输入](test.jpg)`
 
-`![想输入的提示名字，可不输入](/images/test.jpg)`
+    ![本地图片](test.jpg)
 
-![alt](/images/test.jpg)</code></pre><h2 id="添加链接"><a href="#添加链接" class="headerlink" title="添加链接"></a>添加链接</h2><p><code>[想输入的提示名字，可不输入](/images/test.jpg)</code></p>
-<p><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-</li>
-</ul>
+绝对引用：
+    当 Hexo 项目中只用到少量图片时，可以将图片统一放在 source/images 文件夹中，通过 Markdown 语法访问它们。
+
+    `![想输入的提示名字，可不输入](/images/test.jpg)`
+
+    ![本地图片](/images/test.jpg)
+    https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg</code></pre><h2 id="添加链接"><a href="#添加链接" class="headerlink" title="添加链接"></a>添加链接</h2><p> <code>[想输入的提示名字，可不输入](/images/test.jpg)</code></p>
+<p> <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
 
       
     </div>
