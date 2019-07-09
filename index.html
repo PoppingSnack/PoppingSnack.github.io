@@ -327,7 +327,7 @@
                 
               
 
-              <time title="Erstellt: 2019-07-09 13:51:45 / Geändert am: 15:49:19" itemprop="dateCreated datePublished" datetime="2019-07-09T13:51:45+08:00">2019-07-09</time>
+              <time title="Erstellt: 2019-07-09 13:51:45 / Geändert am: 15:56:47" itemprop="dateCreated datePublished" datetime="2019-07-09T13:51:45+08:00">2019-07-09</time>
             </span>
           
 
@@ -403,16 +403,12 @@
 <h2 id="默认显示格式的设置"><a href="#默认显示格式的设置" class="headerlink" title="默认显示格式的设置"></a>默认显示格式的设置</h2><p>打开的_config.yml文件，找到</p>
 <pre><code>default_layout: post   </code></pre><p> 这句表示默认的页面会新建成post格式的。所以，如果你习惯先把文章写成草稿，那就把它改成draft就好。</p>
 <h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><ol>
-<li><p>有序列表；在行首增加 1.、2.、3.，即数字和英文句点,注意句点与文字中间有空格。不要求数字一定要连续，可以都是1.</p>
-</li>
-<li><p>无序列表；在行首增加 * 或 -与文字之间有空格；</p>
-</li>
-<li><p>粗体、斜体、删除线；粗体：在文字前后添加 ** (注意符号与文字间不要有空格）斜体：在文字前后添加 *删除线：在文字前后添加 ~~ </p>
-</li>
-<li><p>在想要展示Markdown笔记目录的地方，添加 [TOC] ，在阅读模式下，标题1~6样式的内容会被提取出来作为目录；</p>
-<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>格式：<br><img src="%E8%BF%9E%E6%8E%A5/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84" alt="图片"></p>
-</li>
+<li>有序列表；在行首增加 1.、2.、3.，即数字和英文句点,注意句点与文字中间有空格。不要求数字一定要连续，可以都是1.</li>
+<li>无序列表；在行首增加 * 或 -与文字之间有空格；</li>
+<li>粗体、斜体、删除线；粗体：在文字前后添加 ** (注意符号与文字间不要有空格）斜体：在文字前后添加 *删除线：在文字前后添加 ~~ </li>
+<li>在想要展示Markdown笔记目录的地方，添加 [TOC] ，在阅读模式下，标题1~6样式的内容会被提取出来作为目录；</li>
 </ol>
+<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p> 格式：<br>    <img src="%E8%BF%9E%E6%8E%A5/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84" alt="图片"></p>
 <p>方式一：直接引用网络图片<br>效果如下：<br> <img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网络图片"><br> <a href="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a></p>
 <p>方式二：引用本地图片</p>
 <p>相对引用:</p>
@@ -423,6 +419,7 @@
 <p>当 Hexo 项目中只用到少量图片时，可以将图片统一放在 source/images 文件夹中，通过 Markdown 语法访问它们。</p>
 <pre><code>![想输入的提示名字，可不输入](/images/test.jpg)</code></pre><p>效果如下：<br><img src="/images/test.jpg" alt="本地图片"><br><a href="https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg" target="_blank" rel="noopener">https://i.loli.net/2018/02/09/5a7d6a402e15e.jpg</a></p>
 <h2 id="添加链接"><a href="#添加链接" class="headerlink" title="添加链接"></a>添加链接</h2><pre><code>[想输入的提示名字，可不输入](/images/test.jpg)</code></pre><p> 效果如下：<br> <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<h2 id="推送是应注意"><a href="#推送是应注意" class="headerlink" title="推送是应注意"></a>推送是应注意</h2><p>在博客目录中依次执行命令：<br>    hexo clean<br>    hexo g<br>    hexo d<br>注意在执行过程中不要切换页面，否则更新（推送）失效！！！</p>
 
           
         
